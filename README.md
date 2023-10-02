@@ -1,27 +1,45 @@
-# React + TypeScript + Vite
+# Totally Awesome Password Validator (T.A.P.V)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hey there! Welcome to the Totally Awesome Password Validator, or T.A.P.V for short. If you're here, you're probably curious about password validation in a totally awesome way!
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  **Clone this Repo**: Fire up your terminal and clone this repo to get started.
 
-## Expanding the ESLint configuration
+        bashCopy code
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+        `git clone <repo_url>
 
-- Configure the top-level `parserOptions` property like this:
+    cd totally-awesome-password-validator`
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+2.  **Run the App**: Fire up the development server by running:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    bashCopy code
+
+    `npm run dev`
+
+    Now you're good to go!
+
+## Customizing Rules and RuleSets
+
+Feel like being a password rule master? You can easily tweak the rules and rule sets to your liking:
+
+1.  **Rules**: You can find the rules in `constants/rules.ts`. Modify them to create new rules or customize existing ones.
+2.  **RuleSets**: Rule sets are just a bunch of rules bundled together. You can create new rule sets by modifying the `RULESET_1` and `RULESET_2` arrays in `constants/rules.ts`.
+
+## Using the Password Validator
+
+Now, let's talk about the real star of the show, the Password Validator component. You can use it in two ways:
+
+- **Inside RuleSet Provider**: If you want the full ruleset changing experience, use the `PasswordValidator` component inside the `RuleSetProvider`.
+- **Independently**: If you want to have your own local rule set, copy the contents of the `Password Validator` folder, import the component and pass the `localRuleSet` prop it.
+
+## About the Project
+
+This project was crafted with love by Andres Patino as part of an interviewing process for Qventus. Here are some cool tech concepts demonstrated:
+
+- **React & Typescript**: Power duo for building dynamic and typed web apps.
+- **Context API**: For global state management, making your life a lot easier.
+- **SCSS & CSS Modules**: Styling in a structured and modular way.
+
+That's it! Have fun tinkering with the Totally Awesome Password Validator. 🚀# Totally Awesome Password Validator (T.A.P.V)

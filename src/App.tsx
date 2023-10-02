@@ -3,6 +3,7 @@ import RuleSetPanel from "./components/RulesetPanel/RuleSetPanel";
 import RuleSetProvider from "./context/RuleSetProvider";
 import PageThemeProvider from "./context/PageThemeProvider";
 import styles from "./app.module.scss";
+import { RULESET_3 } from "./constants/rules";
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
             <RuleSetPanel />
           </section>
           <section>
+            <h2>Consuming RuleSets from a Context</h2>
             <PasswordValidator />
+            <h2>Passing a RuleSet as a prop</h2>
+            <PasswordValidator localRuleSet={RULESET_3} />
           </section>
         </main>
       </RuleSetProvider>

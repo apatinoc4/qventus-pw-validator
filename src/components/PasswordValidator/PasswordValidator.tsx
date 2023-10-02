@@ -2,12 +2,19 @@ import { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import InputAdornment from "@mui/material/InputAdornment";
 import OutlinedInput from "@mui/material/OutlinedInput";
-import RuleCheck from "../RuleCheck/RuleCheck";
+import RuleCheck from "./RuleCheck/RuleCheck";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import styles from "./passwordValidator.module.scss";
+import { Rule } from "../../types/types";
 
-const PasswordValidator = () => {
+//Note: doing this because of the assignment requirements, you can also consume the context in <RuleCheck /> to get and validate the ruleset directly
+
+interface PasswordValidatorProps {
+  localRuleSet?: Rule[];
+}
+
+const PasswordValidator = ({ localRuleSet }: PasswordValidatorProps) => {
   const [inputPassword, setInputPassword] = useState<string>("");
   const [showPassword, setShowPassword] = useState<boolean>(false);
 
@@ -19,6 +26,7 @@ const PasswordValidator = () => {
         </h2>
         <div className={styles.inputWrapper}>
           <OutlinedInput
+            data-testid="pw-input"
             endAdornment={
               <InputAdornment position="end">
                 <IconButton
@@ -36,7 +44,7 @@ const PasswordValidator = () => {
           />
         </div>
       </div>
-      <RuleCheck password={inputPassword} />
+      <RuleCheck password={inputPassword} localRuleSet={localRuleSet} />
     </div>
   );
 };

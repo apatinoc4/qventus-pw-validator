@@ -47,3 +47,4 @@ export const RULES = [
 
 export const RULESET_1 = RULES.slice(0, 4);
 export const RULESET_2 = RULES.slice(4, 8);
+export const RULESET_3 = RULES.slice(0, 6);
