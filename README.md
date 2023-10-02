@@ -8,7 +8,7 @@ Hey there! Welcome to the Totally Awesome Password Validator, or T.A.P.V for sho
 
         bashCopy code
 
-        `git clone <repo_url>
+        `git clone https://github.com/apatinoc4/qventus-pw-validator.git
 
     cd totally-awesome-password-validator`
 
@@ -42,4 +42,4 @@ This project was crafted with love by Andres Patino as part of an interviewing p
 - **Context API**: For global state management, making your life a lot easier.
 - **SCSS & CSS Modules**: Styling in a structured and modular way.
 
-That's it! Have fun tinkering with the Totally Awesome Password Validator. 🚀# Totally Awesome Password Validator (T.A.P.V)
+That's it! Have fun tinkering with the Totally Awesome Password Validator. 🚀
