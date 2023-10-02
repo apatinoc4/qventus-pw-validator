@@ -1,0 +1,21 @@
+@import "../../globals.scss";
+
+.container {
+  width: 100%;
+
+  h2 {
+    span {
+      color: $magenta;
+    }
+  }
+
+  .presets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+}

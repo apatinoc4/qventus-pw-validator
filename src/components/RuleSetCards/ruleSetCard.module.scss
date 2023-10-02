@@ -1,0 +1,26 @@
+@import "../../globals.scss";
+
+.container {
+  background-color: $midnight;
+  border: 2px solid $magenta;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5rem;
+  max-width: 60%;
+  min-height: 10rem;
+  padding: 1rem;
+
+  @include mobile {
+    max-width: 100%;
+  }
+
+  h3 {
+    padding-left: 1rem;
+  }
+
+  .rules {
+    margin-bottom: 0.5rem;
+  }
+}

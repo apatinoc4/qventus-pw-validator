@@ -1,0 +1,35 @@
+@import "../../globals.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+
+  h3 {
+    width: 100%;
+  }
+
+  .rules {
+    background-color: $midnight;
+    border: 2px solid $magenta;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+    .createBttn {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+
+    .rule {
+      align-items: center;
+      display: flex;
+      width: 50%;
+    }
+  }
+}
