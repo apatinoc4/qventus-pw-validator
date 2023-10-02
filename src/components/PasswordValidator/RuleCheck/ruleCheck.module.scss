@@ -1,5 +1,3 @@
-@import "../../globals.scss";
-
 .container {
   display: flex;
   flex-direction: column;
@@ -7,7 +5,7 @@
   padding: 1rem;
   width: 50%;
 
-  @include mobile {
+  @media only screen and (max-width: 640px) {
     width: 100%;
   }
 
@@ -22,7 +20,7 @@
       margin-left: 0.5rem;
 
       &.correct {
-        color: $magenta;
+        color: #e7005e;
       }
     }
   }
